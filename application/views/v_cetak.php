@@ -29,8 +29,13 @@ if($x<=$total){ ?>
 		</td>
 	</tr>
 	<tr>
-		<td style="padding-top:14; padding-right:83px; font-family:'Courier New'; font-size:12pt; font-weight:bold;">
+		<td style="padding-top:14px; padding-right:83px; font-family:'Courier New'; font-size:12pt; font-weight:bold;">
 			<?php echo strtoupper($attenders->attenders_as);?>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-top:330px; padding-left:850px;">
+			<img src="assets/<?php echo $attenders->attenders_qr."?".strtotime("now");?>" width="100px" height="">
 		</td>
 	</tr>
 </table>
